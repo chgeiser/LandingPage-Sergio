@@ -19,7 +19,7 @@ class Example {
                 lerp: 0.05
             },
             smartphone: {
-                direction: 'horizontal',
+                direction: 'vertical',
                 smooth: true,
                 lerp: 0.05
             }
