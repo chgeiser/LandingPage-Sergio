@@ -14,10 +14,14 @@ class Example {
             smooth: true,
             lerp: 0.05,
             tablet: {
-                smooth: true
+                direction: 'horizontal',
+                smooth: true,
+                lerp: 0.05
             },
             smartphone: {
-                smooth: true
+                direction: 'horizontal',
+                smooth: true,
+                lerp: 0.05
             }
         });
 
