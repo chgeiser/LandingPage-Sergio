@@ -39,6 +39,7 @@ class Example {
         [].forEach.call(this.images, (image) => {
             image.classList.remove('-clicked');
             image.classList.add('-active');
+            
         });
     }
 

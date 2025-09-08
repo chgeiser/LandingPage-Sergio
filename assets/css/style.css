@@ -1,6 +1,6 @@
 html, body {
     height: 100%;
-    background: #eee;
+    background: black;
 }
 
 body {
@@ -119,9 +119,10 @@ body {
     }
 
     > .scrollsection > .item > .image.-clicked {
-        transform: translateX(0) translateY(0) scale(5);
-        opacity: 0;
+        transform: translateX(0) translateY(0) scale(1.6);
+        opacity: 1;
         pointer-events: auto;
+        filter: grayscale(0);
         transition: filter .3s ease,
             opacity 1s ease,
             transform 1s ease;
@@ -154,7 +155,7 @@ body {
     }
 
     > .nav {
-        color:black;
+        color:white;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         position: fixed;
         top: 2vh;
