@@ -4,7 +4,7 @@
     --hue-color: 242;
 
     --skin-color: hsl(342, 92%, 46%);
-    --mirage-color: hsl(210, 10%, 23%);
+    --mirage-color: hsl(335, 62%, 38%);
     --title-color: hsl(var(--hue-color), 8%, 95%);
     --text-color: hsl(var(--hue-color), 8%, 85%);
     --body-color: hsl(var(--hue-color), 19%, 5%);
@@ -146,6 +146,23 @@ button, input { border: none; outline: none; }
   }
   100% {
     transform: translateX(0);
+  }
+}
+
+
+.section-title:hover {
+  text-transform: uppercase;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  animation: text 2s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes text {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(200px);
   }
 }
 
