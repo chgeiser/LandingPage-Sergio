@@ -118,6 +118,38 @@ button, input { border: none; outline: none; }
 .about-title { font-size: var(--small-font-size); }
 .about-subtitle { font-size: var(--small-font-size); }
 
+
+/* keyframes*/
+
+.about-img:hover {
+  width: 100%;
+  animation: move 2s infinite;
+  animation-direction: alternate;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(100px);
+  }
+  50% {
+    transform: translateX(0);
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
 /* Media Queries */
 
 @media screen and (max-width: 1408px) {
